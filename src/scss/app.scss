@@ -58,6 +58,7 @@ body {
       }
       &:focus {
          border: 2px solid #0880ae;
+         margin: -1px;
       }
    }
 }
@@ -72,7 +73,6 @@ body {
    border-radius: 6px;
    cursor: pointer;
    width: 100%;
-   margin-bottom: 30px;
 
    .sign-up__dropdown-language-content {
       display: none;
@@ -95,8 +95,9 @@ body {
          }
       }
    }
-   &:hover {
+   &_open {
       border: 2px solid #0880ae;
+      margin: -1px;
    }
 }
 .sign-up__check-accept-terms {
@@ -104,6 +105,7 @@ body {
    position: relative;
    padding-left: 35px;
    margin-bottom: 38px;
+   margin-top: 30px;
    cursor: pointer;
    user-select: none;
    input[type="checkbox"] {

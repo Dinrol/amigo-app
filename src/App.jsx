@@ -143,7 +143,7 @@ const App = () => {
             <div
               style={languageActive !== 'Язык' ? { color: "#000" } : null}
               onClick={handleDropDownLanguage}
-              className='sign-up__dropdown-language'>
+              className={`sign-up__dropdown-language ${languageDropdown ? 'sign-up__dropdown-language_open' : ''}`}>
               {languageActive}
               <div style={languageDropdown ? { display: 'block' } : null}
                 className="sign-up__dropdown-language-content">
