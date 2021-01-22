@@ -1,0 +1,194 @@
+@import "fonts";
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 40px 0;
+   font-size: 16px;
+   font-family: "IBM Plex Sans";
+   background: #e5e5e5;
+   a {
+      text-decoration: none;
+   }
+   input,
+   select,
+   button {
+      outline: none;
+   }
+}
+.wrapper {
+   margin: 0 auto;
+   max-width: 460px;
+   min-width: 360px;
+   background: #ffffff;
+   box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+   border-radius: 24px;
+}
+.sign-up {
+   padding: 40px 30px;
+   color: #2c2738;
+   &__title {
+      font-weight: bold;
+      font-size: 34px;
+   }
+   &__sign-in {
+      margin-bottom: 52px;
+      a {
+         color: #0880ae;
+      }
+   }
+}
+.sign-up__label {
+   font-weight: 500;
+   color: #756f86;
+   margin-bottom: 6px;
+}
+.sign-up__input {
+   max-width: 400px;
+   margin-bottom: 33px;
+   input {
+      border: 1px solid #dbe2ea;
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+      border-radius: 6px;
+      padding: 16px;
+      width: 100%;
+      &::placeholder {
+         color: #7c9cbf;
+      }
+      &:focus {
+         border: 2px solid #0880ae;
+      }
+   }
+}
+.sign-up__dropdown-language {
+   position: relative;
+   display: inline-block;
+   color: #7c9cbf;
+   padding: 16px;
+   background: #ffffff url(./../assets/Icon.svg) 98% 50% no-repeat;
+   border: 1px solid #dbe2ea;
+   box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+   border-radius: 6px;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom: 30px;
+
+   .sign-up__dropdown-language-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      left: 0;
+      bottom: -187px;
+      border-radius: 6px;
+      border: 1px solid #dbe2ea;
+      span {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         &:hover {
+            background: #ebf4f8;
+         }
+      }
+   }
+   &:hover {
+      border: 2px solid #0880ae;
+   }
+}
+.sign-up__check-accept-terms {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 38px;
+   cursor: pointer;
+   user-select: none;
+   input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked + .checkmark {
+         border: 2px solid #0880ae;
+         &:after {
+            display: block;
+         }
+      }
+   }
+   .checkmark {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      height: 28px;
+      width: 28px;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+      border: 1px solid #dbe2ea;
+      border-radius: 4px;
+      &:after {
+         content: "";
+         position: absolute;
+         display: none;
+         left: 9px;
+         top: 4px;
+         width: 5px;
+         height: 10px;
+         border: 2px solid #0880ae;
+         border-width: 0 2px 2px 0;
+         transform: rotate(45deg);
+      }
+   }
+   a {
+      color: #0880ae;
+   }
+}
+.sign-up__btn-sign-up {
+   background: #0880ae;
+   box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+   border-radius: 6px;
+   padding: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   color: #ebf4f8;
+   &:active {
+      border: 2px solid rgba(44, 39, 56, 0.86);
+   }
+   &_disabled {
+      background: #dbe2ea;
+      opacity: 0.5;
+      color: #2c2738;
+      pointer-events: none;
+   }
+}
+.sign-up__login {
+   position: relative;
+   .error-login {
+      display: none;
+      position: absolute;
+      color: #ff7171;
+      font-size: 14px;
+   }
+}
+.sign-up__email {
+   .error-email {
+      display: none;
+      position: absolute;
+      color: #ff7171;
+      font-size: 14px;
+   }
+}
+
+.sign-up__phone {
+   .error-phone {
+      display: none;
+      position: absolute;
+      color: #ff7171;
+      font-size: 14px;
+   }
+}
