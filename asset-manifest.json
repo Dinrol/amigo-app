@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/amigo-app/static/css/main.11b5ba62.chunk.css",
+    "main.js": "/amigo-app/static/js/main.256c4014.chunk.js",
+    "main.js.map": "/amigo-app/static/js/main.256c4014.chunk.js.map",
+    "runtime-main.js": "/amigo-app/static/js/runtime-main.20a667a5.js",
+    "runtime-main.js.map": "/amigo-app/static/js/runtime-main.20a667a5.js.map",
+    "static/js/2.3612a2db.chunk.js": "/amigo-app/static/js/2.3612a2db.chunk.js",
+    "static/js/2.3612a2db.chunk.js.map": "/amigo-app/static/js/2.3612a2db.chunk.js.map",
+    "index.html": "/amigo-app/index.html",
+    "static/css/main.11b5ba62.chunk.css.map": "/amigo-app/static/css/main.11b5ba62.chunk.css.map",
+    "static/js/2.3612a2db.chunk.js.LICENSE.txt": "/amigo-app/static/js/2.3612a2db.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/amigo-app/static/media/Icon.b273bb57.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20a667a5.js",
+    "static/js/2.3612a2db.chunk.js",
+    "static/css/main.11b5ba62.chunk.css",
+    "static/js/main.256c4014.chunk.js"
+  ]
+}
